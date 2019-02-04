@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Alex Mai - About Me</title>
+	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. This is more about my life and where I have traveled."/>
+	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/navigation.css">
+
+	<script type="text/javascript">
+		// For Google Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-63612769-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIHKH8R2dCJ2ceK1lN92Iq6E05BV2tpCQ">
+	</script>
+	<script>
+		function initialize() {
+			var honolulu = { lat: 21.3186, lng: -157.9225 };
+			var list = [ 
+			honolulu,
+			// Maui
+			{lat: 20.8986, lng: -156.4306},
+			// L.A.
+			{lat: 33.9425, lng: -118.4081},
+			// San Diego
+			{lat: 32.7150, lng: -117.1625},
+			// San Fran
+			{lat: 37.7883, lng: -122.4167},
+			// Vegas
+			{lat: 36.1215, lng: -115.1739},
+			// Toronto
+			{lat: 43.7, lng: -79.4},
+			// Rochester, NY
+			{lat: 43.1656, lng: -77.6114},
+			// Buffalo
+			{lat: 42.9047, lng: -78.8494},
+			// NYC
+			{lat: 40.7127, lng: -74.0059},
+			// New Jersey
+			{lat: 40, lng: -74.5},
+			// Boston
+			{lat: 42.3601, lng: -71.0589},
+			// Philadelphia
+			{lat: 39.95, lng: -75.1667},
+			// Baltimore
+			{lat: 39.299236, lng: -76.609383},
+			// D.C.
+			{lat: 38.9047, lng: -77.0164},
+			// Saint Louis
+			{lat: 38.6272, lng: -90.1978},
+			// Chicago
+			{lat: 41.8369, lng: -87.6847},
+			
+			// Starting International
+			// Guangzhou
+			{lat: 23.1333, lng: 113.2667},
+			// Hong Kong
+			{lat: 22.2783, lng: 114.1747},
+			// Japan
+			{lat: 35.6833, lng: 139.7667}
+
+			];
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 2,
+			    center: {lat: 40.433, lng: -3.7}
+			  });
+
+			  // Add a marker at the center of the map.
+			  addMarkers(list, map);
+			}
+
+		function addMarkers(list, map) {
+			for (var i=0; i < list.length; i++) {
+				var marker = new google.maps.Marker({
+					position: { lat: list[i]['lat'], lng: list[i]['lng'] },
+					map: map
+				});
+				// console.log(list[i]['lat']);
+			}
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html" style="text-decoration: none;">
+			<h1>Alex Mai</h1>
+			<p>More About My Life</p>
+		</a>
+	</header>
+
+	<!--Navigation bar-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="current"><a href="about.html">About Me</a></li>
+				<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<!-- <a href="#" id="pull"><img src="Attachments/NavMenu.png" alt="Navigation menu" height="50" width="100"></a> -->
+		</nav>
+
+	<div class="container">
+
+		<article>
+			<h2 class="center-text">10 Facts about me</h2>
+				<ol style="line-height: 2.5;">
+					<li>Born and raised in Hawaii.</li>
+					<li>My philosophy is one of stewardship. I believe in taking care of one another and of the earth, that is entrusted to us.</li>
+					<li>I believe that hard work pays off. Once I get started on a task, it's hard for me to quit.</li>
+					<li>Very curious about how businesses run daily and about the evolving technology around us!</li>
+					<li>Open to new ideas and experiences. I think it's important to view situations with more than just one pair of eyes.</li>
+					<li>I work best in situations where I am given freedom to exercise my creativity.</li>
+					<li>I like food and cooking; I can make the best teriyaki chicken.</li>
+					<li>Badminton is one of my favorite sports to play. I recently started biking again, and I am in love with it.</li>
+					<li>I enjoy coding on my free time. Photography is also one of my favorite hobbies. I also like to volunteer at the animal shelter.</li>
+					<li>I really like to, and want to, travel more. So if you have any recommendations on where I could go next, let me know.</li>
+				</ol>
+
+			<hr/>
+
+			<h2 class="center-text">Places where I have been</h2>
+				<div style="height:500px;">
+					<div id='map'> </div>
+				</div>
+
+			<hr/>
+
+		</article>
+
+	</div>
+
+	<footer>
+			<div class="center-text">&copy; 2015 Alex Mai. All rights reserved.</div>
+	</footer>
+</body>
+</html>

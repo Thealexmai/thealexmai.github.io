@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Alex Mai - Contact</title>
+	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. Contact me"/>
+	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/navigation.css">
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script type="text/javascript">
+		// For Google Analytics
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-63612769-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+</head>
+
+<body>
+
+	<header>
+		<a href="index.html" style="text-decoration: none;">
+			<h1>Contact</h1>
+			<p>Get in touch with me</p>
+			<p>Say a friendly hello</p>
+		</a>
+	</header>
+
+	<!--Navigation bar-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li class="current"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+	<div class="container">
+
+		<article>
+			<div class="half-divide">
+				<div class="subcontainer1">
+					<h2 class="center-text">Contact information</h2>
+					<p>
+						<strong>Alex Mai</strong>
+						<br/>500 Joseph C. Wilson Blvd.
+						<br/>CPU Box 271668
+						<br/>Rochester, NY 14627
+						<br/><a href="mailto:amai2@u.rochester.edu">amai2@u.rochester.edu</a>
+						<div class="btn">
+							<a href="attachments/documents/resume-alex-mai.pdf" target="_blank" class="btn-text"><strong>RESUME</strong></a>
+						</div>
+					</p>
+				</div>
+			</div>
+			<div class="half-divide">
+				<div class="subcontainer2">
+					<img src="attachments/images/profile.jpg" alt="Profile image" class="img-responsive">
+				</div>
+			</div>
+
+			<hr/>
+
+			<h2 class="center-text">Say hello through a form</h2>
+
+				<form method="post" action="submitform.php">
+					<div class="form-group">
+						<label for="firstname">First name</label>
+							<input type="text" class="form-control" name="firstname" placeholder="First name" required>
+					</div>
+					<div class="form-group">
+						<label for="lastname">Last name</label><br/>
+							<input type="text" class="form-control" name="lastname" placeholder="Last name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+							<input type="email" class="form-control" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject</label>
+							<input type="text" class="form-control" name="subject" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+							<textarea name="message" class="form-control" rows="5" required></textarea>
+					</div>
+					<!-- Recaptcha -->
+					<center>
+						<div class="g-recaptcha" data-sitekey="6LfsSxkTAAAAAJgnqMjg46J7UsnGqfcfqlfXwv7n"></div>
+					</center>
+					
+					<div class="center-text">
+						<button type="submit" class="btn btn-primary">Send</button>
+					</div>
+				</form>
+
+		</article>
+
+	</div>
+
+	<footer>
+			<div class="center-text">&copy; 2015 Alex Mai. All rights reserved.</div>
+	</footer>
+
+</body>
+</html>
