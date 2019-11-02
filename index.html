@@ -33,6 +33,25 @@
 
 <body>
 
+	<!--Navigation bar-->
+	<div class='hamburger' onclick="hamburgerClicked(event)">
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li class="current"><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class='nav__logo'>
+			AM
+		</div>
+	</nav>
+
 	<header>
 		<a href="index.html" class='header__link' style="text-decoration: none;">
 			<h1>Alex Mai</h1>
@@ -41,18 +60,7 @@
 		</a>
 	</header>
 
-	<!--Navigation bar-->
-	<nav>
-		<ul>
-			<li class="current"><a href="index.html">Home</a></li>
-			<li><a href="about.html">About Me</a></li>
-			<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-
-	<section class='aboutme__sectioncontainer'>
+	<section class='section aboutme__sectioncontainer'>
 		<div class="container">
 			<!-- About Me -->
 			<h2 class="center-text section-header">A Bit About Me</h2>
@@ -77,16 +85,16 @@
 			</div>
 		</div>
 	</section>
-			
+
 	<!-- Preview of Projects -->
-	<section class='section-inverse'>
+	<section class='section section-inverse'>
 		<div class='container'>
 			<h2 class="center-text section-header">My Recent Projects</h2>
 			<div class='projectspreview__container'>
-				<img src='attachments/images/doze-alert-webpage.jpg' alt='Doze Alert' class='img-responsive'/>
-				<img src='attachments/images/waldo.jpg' alt='Waldo' class='img-responsive half-divide'/>
-				<img src='attachments/images/crudlist.jpg' alt='CrudList' class='img-responsive half-divide'/>
-				<img src='attachments/images/nys.png' alt='Mapping Project' class='img-responsive'/>				
+				<img src='attachments/images/doze-alert-webpage.jpg' alt='Doze Alert' class='img-responsive' />
+				<img src='attachments/images/waldo.jpg' alt='Waldo' class='img-responsive half-divide' />
+				<img src='attachments/images/crudlist.jpg' alt='CrudList' class='img-responsive half-divide' />
+				<img src='attachments/images/nys.png' alt='Mapping Project' class='img-responsive' />
 			</div>
 			<div class="btn btn-inverse center-text">
 				<a href="projects.html" class="btn-text">View more of my projects</a>
@@ -99,12 +107,24 @@
 		<div class="btn center-text">
 			<a href="attachments/documents/resume-alex-mai.pdf" class="btn-text"><strong>RESUME</strong></a>
 		</div>
-	</section> 
+	</section>
 
 	<footer>
 		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
 	</footer>
 
+	<script>
+		function hamburgerClicked(e) {
+			var navClasses = document.getElementById('nav').classList;
+			if(navClasses.contains('nav-mobileshow')) {
+				// Hide
+				navClasses.remove('nav-mobileshow');
+			} else {
+				// Show
+				navClasses.add('nav-mobileshow');
+			}
+		}
+	</script>
 </body>
 
 </html>
