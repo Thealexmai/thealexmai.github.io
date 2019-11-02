@@ -1,94 +1,110 @@
 <!doctype html>
 <html>
+
 <head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Alex Mai - Home</title>
-	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX."/>
-	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
+	<meta name="description" content="My name is Alex Mai and I am a Software Engineer with focus on UI and UX." />
+	<link rel="shortcut icon" href="attachments/images/icon.jpeg" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/navigation.css">
 
 	<script type="text/javascript">
 		// For Google Analytics
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-63612769-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 </head>
 
 <body>
 
 	<header>
-		<a href="index.html" style="text-decoration: none;">
+		<a href="index.html" class='header__link' style="text-decoration: none;">
 			<h1>Alex Mai</h1>
-			<p>Computer Science, Business</p>
-			<p>with a passion in Web Design &amp; Development and Product Management</p>
+			<p>Computer Science, Business in the New York City area<br /> with a passion in Web Design &amp; Development and
+				Product Management</p>
 		</a>
 	</header>
 
 	<!--Navigation bar-->
-		<nav>
-			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<!-- <a href="#" id="pull"><img src="Attachments/NavMenu.png" alt="Navigation menu" height="50" width="100"></a> -->
-		</nav>
+	<nav>
+		<ul>
+			<li class="current"><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
 
-	<div class="container">
-
-		<article>
-			<h2 class="center-text">A Bit About Me</h2>
-				<p class="block-text">I am currently completing two degrees in Computer Science and Business at the University of Rochester. My main focuses are in using human computer interaction, data, and marketing skills to solve business problems.</p>
-
-			<hr/>
-
-			<h2 class="center-text">My Recent Projects</h2>
-				<div class="half-divide">
-					<div class="subcontainer1">
-						<a href="http://www.alexpmai.com/waldo" target="_blank">
-							<img src="attachments/images/waldo.jpg" alt="Waldo" class="img-responsive" />
-						</a>
-					</div>
+	<section class='aboutme__sectioncontainer'>
+		<div class="container">
+			<!-- About Me -->
+			<h2 class="center-text section-header">A Bit About Me</h2>
+			<div class='aboutme__container'>
+				<div class='aboutme__box'>
+					<img class='aboutme__box__image' src='attachments/images/general/code.png' alt='Code' />
+					<h3 class='aboutme__subheading'>Tech</h3>
+					<p>Software developer and technology professional in the New York City area</p>
 				</div>
-				<div class="half-divide">
-					<div class="subcontainer2">
-						<a href="http://www.alexpmai.com/crudlist" target="_blank">
-							<img src="attachments/images/crudlist.jpg" alt="CRUDList" class="img-responsive" />
-						</a>
-					</div>
+				<div class='aboutme__box'>
+					<img class='aboutme__box__image' src='attachments/images/general/lightbulb.png' alt='Lightbulb' />
+					<h3 class='aboutme__subheading'>Business</h3>
+					<p>Studied business in university with a
+						focus in marketing and have experience conducting market research and data analysis</p>
 				</div>
-				<div class="btn center-text">
-					<a href="projects.html" class="btn-text">View more of my projects</a>
+				<div class='aboutme__box'>
+					<img class='aboutme__box__image' src='attachments/images/general/target.png' alt='Target' />
+					<h3 class='aboutme__subheading'>Solution</h3>
+					<p>Developed a solution-oriented mindset and enjoy leveraging
+						human computer interaction, data, and marketing skills to identify and solve problems</p>
 				</div>
-
-			<hr/>
-
-			<div class="btn center-text">
-				<a href="attachments/documents/resume-alex-mai.pdf" class="btn-text"><strong>RESUME</strong></a>
 			</div>
-			<div class="btn center-text">
-				<a href="contact.html" class="btn-text"><strong>CONTACT</strong></a>
+		</div>
+	</section>
+			
+	<!-- Preview of Projects -->
+	<section class='section-inverse'>
+		<div class='container'>
+			<h2 class="center-text section-header">My Recent Projects</h2>
+			<div class='projectspreview__container'>
+				<img src='attachments/images/doze-alert-webpage.jpg' alt='Doze Alert' class='img-responsive'/>
+				<img src='attachments/images/waldo.jpg' alt='Waldo' class='img-responsive half-divide'/>
+				<img src='attachments/images/crudlist.jpg' alt='CrudList' class='img-responsive half-divide'/>
+				<img src='attachments/images/nys.png' alt='Mapping Project' class='img-responsive'/>				
 			</div>
+			<div class="btn btn-inverse center-text">
+				<a href="projects.html" class="btn-text">View more of my projects</a>
+			</div>
+		</div>
+	</section>
 
-
-		</article>
-
-	</div>
+	<!-- CTA Resume -->
+	<section class='section'>
+		<div class="btn center-text">
+			<a href="attachments/documents/resume-alex-mai.pdf" class="btn-text"><strong>RESUME</strong></a>
+		</div>
+	</section> 
 
 	<footer>
-			<div class="center-text">&copy; 2015 Alex Mai. All rights reserved.</div>
+		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
 	</footer>
 
 </body>
+
 </html>

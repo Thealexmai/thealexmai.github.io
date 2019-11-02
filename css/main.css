@@ -1,24 +1,209 @@
-body{font-family:'Open Sans', Tahoma, Helvetica, sans-serif;background-color:#d3d3d3;margin:0px 0px 20px 0px;}
-header{width:100%;height:500px;background-color:#1e1e1e;display:block;text-align:center;margin:0;}
-header h1{margin:0;color:#fff;padding-top:200px;}
-header p{margin-top:10px;color:#fff;padding-left:30px;padding-right:30px;}
-h2{margin-top:50px;margin-bottom:40px;}
-hr{display:block;margin-top:50px;margin-bottom:50px;width:90%;border:1px solid rgba(26, 26, 26, 0.2);}
-.block-text{margin-left:auto;margin-right:auto;width:60%;text-align:center;}
-.half-divide{display:table-cell;width:50%;vertical-align:top;}
-.subcontainer1{padding-right:20px;}
-.subcontainer1 p{line-height:2;}
-.subcontainer2{padding-left:20px;}
-.subcontainer2 p{line-height:2;}
-.btn{margin-top:50px;margin-bottom:50px;}
-.btn-text{text-decoration:none;color:black;padding:10px 20px 10px 20px;border:3px solid black;}
-a.btn-text:hover{background-color:black;color:white;}
-.center-text{text-align:center;}
-.container{margin:0px auto;width:80%;max-width:1200px;background-color:white;padding:50px;margin-bottom:50px;}
-.img-responsive{width:100%;}
-#map{height:100%;}
-@media(max-width:720px){.half-divide{display:block;width:auto;}
-.subcontainer1{padding-right:0px;}
-.subcontainer2{padding-left:0px;}
-.container{padding:20px;}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Tahoma, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin: 0px 0px 20px 0px;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background-color: #1e1e1e;
+  display: block;
+  margin: 0;
+}
+
+.header__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+header p {
+  color: #fff;
+  font-size: 22px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 56px;
+}
+
+hr {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+img {
+  height: auto;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.section-header {
+  padding: 32px 0;
+  margin-bottom: 24px;
+}
+
+.section-inverse {
+  background-color: #171717;
+  color: #ffffff;
+}
+
+.block-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.half-divide {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+
+.subcontainer1 {
+  padding-right: 20px;
+}
+
+.subcontainer1 p {
+  line-height: 2;
+}
+
+.subcontainer2 {
+  padding-left: 20px;
+}
+
+.subcontainer2 p {
+  line-height: 2;
+}
+
+.btn {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-text {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid black;
+  transition-duration: 0.5s;
+}
+
+a.btn-text:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-inverse .btn-text{
+  border: 3px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-inverse a.btn-text:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.aboutme__sectioncontainer {
+  background: #ffffff;
+}
+
+.aboutme__container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 48px;
+}
+
+.aboutme__container .aboutme__box {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.aboutme__box:first-child {
+  padding-left: 0;
+  padding-right: 8px;
+}
+
+.aboutme__box:last-child {
+  padding-right: 0;
+}
+
+.aboutme__box .aboutme__subheading {
+  text-align: center;
+}
+
+.aboutme__box .aboutme__box__image {
+  align-self: center;
+}
+
+.projectspreview__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-bottom: 24px;
+}
+
+.projectspreview__container img {
+  margin-bottom: 24px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+  margin: 0px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+@media(max-width:720px) {
+  .half-divide {
+    display: block;
+    width: auto;
+  }
+
+  .subcontainer1 {
+    padding-right: 0px;
+  }
+
+  .subcontainer2 {
+    padding-left: 0px;
+  }
+
+  .container {
+    padding: 20px;
+  }
 }
