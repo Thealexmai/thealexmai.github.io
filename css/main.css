@@ -163,6 +163,7 @@ a.btn-text:hover {
 
 .aboutme__box .aboutme__box__image {
   align-self: center;
+  max-width: 56px;
 }
 
 .projectspreview__container {
