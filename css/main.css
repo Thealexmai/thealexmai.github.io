@@ -191,6 +191,17 @@ a.btn-text:hover {
   max-width: 100%;
 }
 
+.footer-icondisclaimer {
+  font-size: 11px;
+}
+
+.footer-icondisclaimer a,
+.footer-icondisclaimer a:visited,
+.footer-icondisclaimer a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 #map {
   height: 100%;
 }

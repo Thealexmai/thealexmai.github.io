@@ -27,16 +27,13 @@
 
 <body>
 
-	<header>
-		<a href="index.html" style="text-decoration: none;">
-			<h1>Contact</h1>
-			<p>Get in touch with me</p>
-			<p>Say a friendly hello</p>
-		</a>
-	</header>
-
 	<!--Navigation bar-->
-		<nav>
+	<div class='hamburger' onclick="hamburgerClicked(event)">
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+		</div>
+		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
@@ -44,7 +41,18 @@
 				<li><a href="projects.html">Projects</a></li>
 				<li class="current"><a href="contact.html">Contact</a></li>
 			</ul>
+			<div class='nav__logo'>
+				AM
+			</div>
 		</nav>
+
+	<header>
+		<a href="index.html" class='header__link' style="text-decoration: none;">
+			<h1>Contact</h1>
+			<p>Get in touch with me</p>
+			<p>Say a friendly hello</p>
+		</a>
+	</header>
 
 	<div class="container">
 
@@ -96,9 +104,6 @@
 							<textarea name="message" class="form-control" rows="5" required></textarea>
 					</div>
 					<!-- Recaptcha -->
-					<center>
-						<div class="g-recaptcha" data-sitekey="6LfsSxkTAAAAAJgnqMjg46J7UsnGqfcfqlfXwv7n"></div>
-					</center>
 					
 					<div class="center-text">
 						<button type="submit" class="btn btn-primary">Send</button>
@@ -110,8 +115,23 @@
 	</div>
 
 	<footer>
-			<div class="center-text">&copy; 2015 Alex Mai. All rights reserved.</div>
-	</footer>
+			<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
+			<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+					href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		</footer>
+	
+		<script>
+			function hamburgerClicked(e) {
+				var navClasses = document.getElementById('nav').classList;
+				if (navClasses.contains('nav-mobileshow')) {
+					// Hide
+					navClasses.remove('nav-mobileshow');
+				} else {
+					// Show
+					navClasses.add('nav-mobileshow');
+				}
+			}
+		</script>
 
 </body>
 </html>

@@ -91,10 +91,10 @@
 		<div class='container'>
 			<h2 class="center-text section-header">My Recent Projects</h2>
 			<div class='projectspreview__container'>
-				<img src='attachments/images/doze-alert-webpage.jpg' alt='Doze Alert' class='img-responsive' />
-				<img src='attachments/images/waldo.jpg' alt='Waldo' class='img-responsive half-divide' />
-				<img src='attachments/images/crudlist.jpg' alt='CrudList' class='img-responsive half-divide' />
-				<img src='attachments/images/nys.png' alt='Mapping Project' class='img-responsive' />
+				<a href='projects.html'><img src='attachments/images/doze-alert-webpage.jpg' alt='Doze Alert' class='img-responsive' /></a>
+				<a href='projects.html' class='half-divide'><img src='attachments/images/waldo.jpg' alt='Waldo' class='img-responsive' /></a>
+				<a href='projects.html' class='half-divide'><img src='attachments/images/crudlist.jpg' alt='CrudList' class='img-responsive' /></a>
+				<a href='projects.html'><img src='attachments/images/nys.png' alt='Mapping Project' class='img-responsive' /></a>
 			</div>
 			<div class="btn btn-inverse center-text">
 				<a href="projects.html" class="btn-text">View more of my projects</a>
@@ -111,12 +111,14 @@
 
 	<footer>
 		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
+		<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 	</footer>
 
 	<script>
 		function hamburgerClicked(e) {
 			var navClasses = document.getElementById('nav').classList;
-			if(navClasses.contains('nav-mobileshow')) {
+			if (navClasses.contains('nav-mobileshow')) {
 				// Hide
 				navClasses.remove('nav-mobileshow');
 			} else {

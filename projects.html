@@ -26,15 +26,13 @@
 
 <body>
 
-	<header>
-		<a href="index.html" style="text-decoration:none;">
-			<h1>Projects</h1>
-			<p>Take a moment of view some of my work.</p>
-		</a>
-	</header>
-
 	<!--Navigation bar-->
-		<nav>
+	<div class='hamburger' onclick="hamburgerClicked(event)">
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+		</div>
+		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Me</a></li>
@@ -42,8 +40,17 @@
 				<li class="current"><a href="projects.html">Projects</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-			<!-- <a href="#" id="pull"><img src="Attachments/NavMenu.png" alt="Navigation menu" height="50" width="100"></a> -->
+			<div class='nav__logo'>
+				AM
+			</div>
 		</nav>
+
+	<header>
+		<a href="index.html" class='header__link' style="text-decoration:none;">
+			<h1>Projects</h1>
+			<p>Take a moment of view some of my work.</p>
+		</a>
+	</header>
 
 	<div class="container">
 
@@ -221,8 +228,23 @@
 	</div>
 
 	<footer>
-		<div class="center-text">&copy; 2015 Alex Mai. All rights reserved.</div>
+		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
+		<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 	</footer>
+	
+	<script>
+		function hamburgerClicked(e) {
+			var navClasses = document.getElementById('nav').classList;
+			if (navClasses.contains('nav-mobileshow')) {
+				// Hide
+				navClasses.remove('nav-mobileshow');
+			} else {
+				// Show
+				navClasses.add('nav-mobileshow');
+			}
+		}
+	</script>
 
 
 	<script src="js/jquery-1.11.3.min.js"></script>
