@@ -1,22 +1,31 @@
 <!doctype html>
 <html>
+
 <head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Alex Mai - About Me</title>
-	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. This is more about my life and where I have traveled."/>
-	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
+	<meta name="description"
+		content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. This is more about my life and where I have traveled." />
+	<link rel="shortcut icon" href="attachments/images/icon.jpeg" />
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/navigation.css">
 
 	<script type="text/javascript">
 		// For Google Analytics
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-63612769-1', 'auto');
 		ga('send', 'pageview');
 	</script>
@@ -25,65 +34,131 @@
 	</script>
 	<script>
 		function initialize() {
-			var honolulu = { lat: 21.3186, lng: -157.9225 };
-			var list = [ 
-			honolulu,
-			// Maui
-			{lat: 20.8986, lng: -156.4306},
-			// L.A.
-			{lat: 33.9425, lng: -118.4081},
-			// San Diego
-			{lat: 32.7150, lng: -117.1625},
-			// San Fran
-			{lat: 37.7883, lng: -122.4167},
-			// Vegas
-			{lat: 36.1215, lng: -115.1739},
-			// Toronto
-			{lat: 43.7, lng: -79.4},
-			// Rochester, NY
-			{lat: 43.1656, lng: -77.6114},
-			// Buffalo
-			{lat: 42.9047, lng: -78.8494},
-			// NYC
-			{lat: 40.7127, lng: -74.0059},
-			// New Jersey
-			{lat: 40, lng: -74.5},
-			// Boston
-			{lat: 42.3601, lng: -71.0589},
-			// Philadelphia
-			{lat: 39.95, lng: -75.1667},
-			// Baltimore
-			{lat: 39.299236, lng: -76.609383},
-			// D.C.
-			{lat: 38.9047, lng: -77.0164},
-			// Saint Louis
-			{lat: 38.6272, lng: -90.1978},
-			// Chicago
-			{lat: 41.8369, lng: -87.6847},
-			
-			// Starting International
-			// Guangzhou
-			{lat: 23.1333, lng: 113.2667},
-			// Hong Kong
-			{lat: 22.2783, lng: 114.1747},
-			// Japan
-			{lat: 35.6833, lng: 139.7667}
+			var honolulu = {
+				lat: 21.3186,
+				lng: -157.9225
+			};
+			var list = [
+				honolulu,
+				// Maui
+				{
+					lat: 20.8986,
+					lng: -156.4306
+				},
+				// L.A.
+				{
+					lat: 33.9425,
+					lng: -118.4081
+				},
+				// San Diego
+				{
+					lat: 32.7150,
+					lng: -117.1625
+				},
+				// San Fran
+				{
+					lat: 37.7883,
+					lng: -122.4167
+				},
+				// Vegas
+				{
+					lat: 36.1215,
+					lng: -115.1739
+				},
+				// Toronto
+				{
+					lat: 43.7,
+					lng: -79.4
+				},
+				// Rochester, NY
+				{
+					lat: 43.1656,
+					lng: -77.6114
+				},
+				// Buffalo
+				{
+					lat: 42.9047,
+					lng: -78.8494
+				},
+				// NYC
+				{
+					lat: 40.7127,
+					lng: -74.0059
+				},
+				// New Jersey
+				{
+					lat: 40,
+					lng: -74.5
+				},
+				// Boston
+				{
+					lat: 42.3601,
+					lng: -71.0589
+				},
+				// Philadelphia
+				{
+					lat: 39.95,
+					lng: -75.1667
+				},
+				// Baltimore
+				{
+					lat: 39.299236,
+					lng: -76.609383
+				},
+				// D.C.
+				{
+					lat: 38.9047,
+					lng: -77.0164
+				},
+				// Saint Louis
+				{
+					lat: 38.6272,
+					lng: -90.1978
+				},
+				// Chicago
+				{
+					lat: 41.8369,
+					lng: -87.6847
+				},
+
+				// Starting International
+				// Guangzhou
+				{
+					lat: 23.1333,
+					lng: 113.2667
+				},
+				// Hong Kong
+				{
+					lat: 22.2783,
+					lng: 114.1747
+				},
+				// Japan
+				{
+					lat: 35.6833,
+					lng: 139.7667
+				}
 
 			];
 
 			var map = new google.maps.Map(document.getElementById('map'), {
-			    zoom: 2,
-			    center: {lat: 40.433, lng: -3.7}
-			  });
+				zoom: 2,
+				center: {
+					lat: 40.433,
+					lng: -3.7
+				}
+			});
 
-			  // Add a marker at the center of the map.
-			  addMarkers(list, map);
-			}
+			// Add a marker at the center of the map.
+			addMarkers(list, map);
+		}
 
 		function addMarkers(list, map) {
-			for (var i=0; i < list.length; i++) {
+			for (var i = 0; i < list.length; i++) {
 				var marker = new google.maps.Marker({
-					position: { lat: list[i]['lat'], lng: list[i]['lng'] },
+					position: {
+						lat: list[i]['lat'],
+						lng: list[i]['lng']
+					},
 					map: map
 				});
 				// console.log(list[i]['lat']);
@@ -98,22 +173,22 @@
 
 	<!--Navigation bar-->
 	<div class='hamburger' onclick="hamburgerClicked(event)">
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="current"><a href="about.html">About Me</a></li>
+			<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class='nav__logo'>
+			AM
 		</div>
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="current"><a href="about.html">About Me</a></li>
-				<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			<div class='nav__logo'>
-				AM
-			</div>
-		</nav>
+	</nav>
 
 	<header>
 		<a href="index.html" class='header__link' style="text-decoration: none;">
@@ -122,53 +197,104 @@
 		</a>
 	</header>
 
-	<div class="container">
+	<div class="section">
 
-		<article>
-			<h2 class="center-text">10 Facts about me</h2>
-				<ol style="line-height: 2.5;">
-					<li>Born and raised in Hawaii.</li>
-					<li>My philosophy is one of stewardship. I believe in taking care of one another and of the earth, that is entrusted to us.</li>
-					<li>I believe that hard work pays off. Once I get started on a task, it's hard for me to quit.</li>
-					<li>Very curious about how businesses run daily and about the evolving technology around us!</li>
-					<li>Open to new ideas and experiences. I think it's important to view situations with more than just one pair of eyes.</li>
-					<li>I work best in situations where I am given freedom to exercise my creativity.</li>
-					<li>I like food and cooking; I can make the best teriyaki chicken.</li>
-					<li>Badminton is one of my favorite sports to play. I recently started biking again, and I am in love with it.</li>
-					<li>I enjoy coding on my free time. Photography is also one of my favorite hobbies. I also like to volunteer at the animal shelter.</li>
-					<li>I really like to, and want to, travel more. So if you have any recommendations on where I could go next, let me know.</li>
-				</ol>
-
-			<hr/>
-
-			<!-- <h2 class="center-text">Places where I have been</h2>
-				<div style="height:500px;">
-					<div id='map'> </div>
-				</div> -->
-
-			<hr/>
+		<article class='aboutme__contentcontainer container'>
+			<h2 class="aboutme__contenttitle center-text">Few Facts About Me</h2>
+			<div class='flex wrap justify-space-between'>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/island.png' alt='Hawaii' />
+					</div>
+					<h3 class='aboutme__header'>Hawaii</h3>
+					<p class='aboutme__content'>Born and raised in Hawaii</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/heart.png' alt='Care' />
+					</div>
+					<h3 class='aboutme__header'>Philosophy</h3>
+					<p class='aboutme__content'>Believer in taking care of one another and of the earth</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/team.png' alt='Teamwork' />
+					</div>
+					<h3 class='aboutme__header'>Hard Work</h3>
+					<p class='aboutme__content'>Believer in that there is no substitution for hard work. Once I get started on a
+						task, I don't quit easily.</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/brain.png' alt='Growth Brain' />
+					</div>
+					<h3 class='aboutme__header'>Growth Mindset</h3>
+					<p class='aboutme__content'>Very curious about businesses and about the evolving technology around us, and a
+						life-long student! It's important to view situations with more than just a pair of eyes.</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/cooking.png' alt='Cooking' />
+					</div>
+					<h3 class='aboutme__header'>Cooking</h3>
+					<p class='aboutme__content'>Foodie and love eating and making home-cooked meals. Capable of making the best
+						lemon pepper chicken</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/gym.png' alt='Gym' />
+					</div>
+					<h3 class='aboutme__header'>Fitness</h3>
+					<p class='aboutme__content'>Being active and fit is part of my lifestyle. I started my fitness journey
+						February 2018. Ask me how I'm doing! </p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/travel.png' alt='Airplane' />
+					</div>
+					<h3 class='aboutme__header'>Traveler</h3>
+					<p class='aboutme__content'>Love to travel and am open to any recommendations</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/creative.png' alt='Rocketship' />
+					</div>
+					<h3 class='aboutme__header'>Creativity</h3>
+					<p class='aboutme__content'>I work best in situations where I am given freedom to exercise my creativity</p>
+				</div>
+				<div class='aboutme__card flex-item col-xs-12 col-md-3'>
+					<div class='aboutme__iconcontainer'>
+						<img class='aboutme__icon' src='attachments/images/about-me/bike.png' alt='Bike' />
+					</div>
+					<h3 class='aboutme__header'>Hobbies</h3>
+					<p class='aboutme__content'>Badminton is one of my favorite sports to play. Also started city biking and am
+						totally in love with it. Enjoy coding on my free time, photography, and volunteering at the animal shelter.
+					</p>
+				</div>
+			</div>
 
 		</article>
 
 	</div>
 
 	<footer>
-			<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
-			<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-					href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-		</footer>
-	
-		<script>
-			function hamburgerClicked(e) {
-				var navClasses = document.getElementById('nav').classList;
-				if (navClasses.contains('nav-mobileshow')) {
-					// Hide
-					navClasses.remove('nav-mobileshow');
-				} else {
-					// Show
-					navClasses.add('nav-mobileshow');
-				}
+		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
+		<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+				title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	</footer>
+
+	<script>
+		function hamburgerClicked(e) {
+			var navClasses = document.getElementById('nav').classList;
+			if (navClasses.contains('nav-mobileshow')) {
+				// Hide
+				navClasses.remove('nav-mobileshow');
+			} else {
+				// Show
+				navClasses.add('nav-mobileshow');
 			}
-		</script>
+		}
+	</script>
 </body>
+
 </html>
