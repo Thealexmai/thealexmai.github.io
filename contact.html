@@ -7,7 +7,7 @@
 	<title>Alex Mai - Contact</title>
 	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. Contact me"/>
 	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/navigation.css">
@@ -54,61 +54,25 @@
 		</a>
 	</header>
 
-	<div class="container">
+	<div class="section container">
 
-		<article>
-			<div class="half-divide">
-				<div class="subcontainer1">
-					<h2 class="center-text">Contact information</h2>
+		<article class='flex justify-space-between align-center wrap contactcontainer'>
+			<div class="flex-item col-md-5">
+				<img src="attachments/images/profile.jpg" alt="Profile image" class="img-responsive">
+			</div>
+			<div class="flex-item col-xs-12 col-md-6">
+				<div>
+					<h2>Contact information</h2>
 					<p>
 						<strong>Alex Mai</strong>
-						<br/>500 Joseph C. Wilson Blvd.
-						<br/>CPU Box 271668
-						<br/>Rochester, NY 14627
-						<br/><a href="mailto:amai2@u.rochester.edu">amai2@u.rochester.edu</a>
+						<br/><a href="mailto:alex.ph.mai@gmail.com">alex.ph.mai@gmail.com</a>
 						<div class="btn">
 							<a href="attachments/documents/resume-alex-mai.pdf" target="_blank" class="btn-text"><strong>RESUME</strong></a>
 						</div>
 					</p>
 				</div>
 			</div>
-			<div class="half-divide">
-				<div class="subcontainer2">
-					<img src="attachments/images/profile.jpg" alt="Profile image" class="img-responsive">
-				</div>
-			</div>
-
-			<hr/>
-
-			<h2 class="center-text">Say hello through a form</h2>
-
-				<form method="post" action="submitform.php">
-					<div class="form-group">
-						<label for="firstname">First name</label>
-							<input type="text" class="form-control" name="firstname" placeholder="First name" required>
-					</div>
-					<div class="form-group">
-						<label for="lastname">Last name</label><br/>
-							<input type="text" class="form-control" name="lastname" placeholder="Last name" required>
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-							<input type="email" class="form-control" name="email" required>
-					</div>
-					<div class="form-group">
-						<label for="subject">Subject</label>
-							<input type="text" class="form-control" name="subject" required>
-					</div>
-					<div class="form-group">
-						<label for="message">Message</label>
-							<textarea name="message" class="form-control" rows="5" required></textarea>
-					</div>
-					<!-- Recaptcha -->
-					
-					<div class="center-text">
-						<button type="submit" class="btn btn-primary">Send</button>
-					</div>
-				</form>
+			
 
 		</article>
 

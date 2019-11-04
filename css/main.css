@@ -217,6 +217,7 @@ a.btn-text:hover {
 .projectcontainer {
   flex-direction: column;
   margin: 40px 0;
+  min-height: 400px;
 }
 
 @media screen and (min-width: 768px) {
@@ -280,6 +281,10 @@ footer {
   align-items: center;
 }
 
+.flex.justify-space-between {
+  justify-content: space-between;
+}
+
 .flex-item.col-xs-12 {
   flex-basis: 100%;
   max-width: 100%;
@@ -290,5 +295,9 @@ footer {
   .flex-item.col-md-6 {
     flex-basis: 50%;
     max-width: 50%;
+  }
+  .flexitem.col-md-5 {
+    flex-basis: 41.66%;
+    max-width: 41.66%;
   }
 }
