@@ -31,6 +31,7 @@ nav ul {
 #nav__logoborder-top {
   top: 0;
   left: 0;
+  height: 2px;
   -webkit-animation: growRight 1s forwards;
   animation: growRight 1s forwards;
 }
@@ -38,6 +39,7 @@ nav ul {
 #nav__logoborder-right {
   top: 0;
   right: 0;
+  width: 2px;
   -webkit-animation: growDown 1s forwards 1s;
   animation: growDown 1s forwards 1s;
 }
@@ -45,6 +47,7 @@ nav ul {
 #nav__logoborder-bottom {
   bottom: 0;
   right: 0;
+  height: 2px;
   -webkit-animation: growLeft 1s forwards 2s;
   animation: growLeft 1s forwards 2s;
 }
@@ -52,47 +55,42 @@ nav ul {
 #nav__logoborder-left {
   bottom: 0;
   left: 0;
+  width: 2px;
   -webkit-animation: growUp 1s forwards 3s;
   animation: growUp 1s forwards 3s;
 }
 
 @-webkit-keyframes growRight {
   100% {
-    width: 100%;
-    height: 1px;
+    width: 100%;    
   }
 }
 @keyframes growRight {
   100% {
     width: 100%;
-    height: 1px;
   }
 }
 
 @-webkit-keyframes growDown {
   100% {
     height: 100%;
-    width: 1px;
   }
 }
 
 @keyframes growDown {
   100% {
     height: 100%;
-    width: 1px;
   }
 }
 
 @-webkit-keyframes growLeft {
   100% {
-    height: 1px;
     width: 100%;
   }
 }
 
 @keyframes growLeft {
   100% {
-    height: 1px;
     width: 100%;
   }
 }
@@ -100,14 +98,12 @@ nav ul {
 @-webkit-keyframes growUp {
   100% {
     height: 100%;
-    width: 1px;
   }
 }
 
 @keyframes growUp {
   100% {
     height: 100%;
-    width: 1px;
   }
 }
 
