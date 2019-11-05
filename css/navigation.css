@@ -113,9 +113,10 @@ nav ul {
   text-decoration: none;
 }
 
+.nav__logo,
 .nav__logo:visited,
 .nav__logo:hover {
-  color: inherit;
+  color: #000000;
 }
 
 .current a {
