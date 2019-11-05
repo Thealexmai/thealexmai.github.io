@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Alex Mai - Contact</title>
-	<meta name="description" content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. Contact me"/>
-	<link rel="shortcut icon" href="attachments/images/icon.jpeg"/>
+	<meta name="description"
+		content="My name is Alex Mai and I am a Computer Science major at the University of Rochester with focus on UI and UX. Contact me" />
+	<link rel="shortcut icon" href="attachments/images/icon.jpeg" />
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400;300" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/main.css">
@@ -15,36 +17,49 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script type="text/javascript">
 		// For Google Analytics
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 		ga('create', 'UA-63612769-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 </head>
 
 <body>
 
 	<!--Navigation bar-->
 	<div class='hamburger' onclick="hamburgerClicked(event)">
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
-			<div>&nbsp;</div>
-		</div>
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li class="current"><a href="contact.html">Contact</a></li>
-			</ul>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="attachments/documents/resume-alex-mai.pdf" target="_blank">Resume</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li class="current"><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class='nav__logocontainer'>
+			<div class='nav__logoborder' id='nav__logoborder-top'></div>
+			<div class='nav__logoborder' id='nav__logoborder-right'></div>
+			<div class='nav__logoborder' id='nav__logoborder-bottom'></div>
+			<div class='nav__logoborder' id='nav__logoborder-left'></div>
 			<a href="index.html" class='nav__logo'>
 				AM
 			</a>
-		</nav>
+		</div>
+	</nav>
 
 	<header>
 		<div class='header__container' style="text-decoration: none;">
@@ -65,37 +80,39 @@
 					<h2>Contact information</h2>
 					<p>
 						<strong>Alex Mai</strong>
-						<br/><a href="mailto:alex.ph.mai@gmail.com">alex.ph.mai@gmail.com</a>
+						<br /><a href="mailto:alex.ph.mai@gmail.com">alex.ph.mai@gmail.com</a>
 						<div class="btn">
-							<a href="attachments/documents/resume-alex-mai.pdf" target="_blank" class="btn-text"><strong>RESUME</strong></a>
+							<a href="attachments/documents/resume-alex-mai.pdf" target="_blank"
+								class="btn-text"><strong>RESUME</strong></a>
 						</div>
 					</p>
 				</div>
 			</div>
-			
+
 
 		</article>
 
 	</div>
 
 	<footer>
-			<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
-			<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-					href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-		</footer>
-	
-		<script>
-			function hamburgerClicked(e) {
-				var navClasses = document.getElementById('nav').classList;
-				if (navClasses.contains('nav-mobileshow')) {
-					// Hide
-					navClasses.remove('nav-mobileshow');
-				} else {
-					// Show
-					navClasses.add('nav-mobileshow');
-				}
+		<div class="center-text">&copy; 2019 Alex Mai. All rights reserved.</div>
+		<div class='center-text footer-icondisclaimer'>Icons made by <a href="https://www.flaticon.com/authors/freepik"
+				title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	</footer>
+
+	<script>
+		function hamburgerClicked(e) {
+			var navClasses = document.getElementById('nav').classList;
+			if (navClasses.contains('nav-mobileshow')) {
+				// Hide
+				navClasses.remove('nav-mobileshow');
+			} else {
+				// Show
+				navClasses.add('nav-mobileshow');
 			}
-		</script>
+		}
+	</script>
 
 </body>
+
 </html>

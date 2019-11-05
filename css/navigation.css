@@ -15,12 +15,105 @@ nav ul {
   padding: 16px 0;
 }
 
-.nav__logo {
+.nav__logocontainer {
+  position: relative;
   margin-right: 24px;
+  padding: 10px;
+}
+
+.nav__logoborder {
+  position: absolute;
+  background: #171717;
+  width: 0;
+  height: 0;
+}
+
+#nav__logoborder-top {
+  top: 0;
+  left: 0;
+  -webkit-animation: growRight 1s forwards;
+  animation: growRight 1s forwards;
+}
+
+#nav__logoborder-right {
+  top: 0;
+  right: 0;
+  -webkit-animation: growDown 1s forwards 1s;
+  animation: growDown 1s forwards 1s;
+}
+
+#nav__logoborder-bottom {
+  bottom: 0;
+  right: 0;
+  -webkit-animation: growLeft 1s forwards 2s;
+  animation: growLeft 1s forwards 2s;
+}
+
+#nav__logoborder-left {
+  bottom: 0;
+  left: 0;
+  -webkit-animation: growUp 1s forwards 3s;
+  animation: growUp 1s forwards 3s;
+}
+
+@-webkit-keyframes growRight {
+  100% {
+    width: 100%;
+    height: 1px;
+  }
+}
+@keyframes growRight {
+  100% {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@-webkit-keyframes growDown {
+  100% {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+@keyframes growDown {
+  100% {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+@-webkit-keyframes growLeft {
+  100% {
+    height: 1px;
+    width: 100%;
+  }
+}
+
+@keyframes growLeft {
+  100% {
+    height: 1px;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes growUp {
+  100% {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+@keyframes growUp {
+  100% {
+    height: 100%;
+    width: 1px;
+  }
+}
+
+.nav__logo {
   user-select: none;
   font-size: 32px;
-  border: 1px solid #171717;
-  padding: 10px;
   text-decoration: none;
 }
 
@@ -29,7 +122,7 @@ nav ul {
   color: inherit;
 }
 
-.current a{
+.current a {
   border-bottom: 3px solid #171717;
 }
 
@@ -62,7 +155,7 @@ nav ul a:hover {
   z-index: 10001;
 }
 
-.hamburger > div {
+.hamburger>div {
   width: 35px;
   height: 5px;
   background-color: #171717;
@@ -81,13 +174,15 @@ nav ul a:hover {
     justify-content: flex-end;
   }
 
-  nav.nav-mobileshow .nav__logo{
+  nav.nav-mobileshow .nav__logo {
     margin-top: 24px;
   }
+
   nav.nav-mobileshow ul {
     margin-left: 40px;
     width: 100%;
   }
+
   nav.nav-mobileshow li {
     display: block;
   }
